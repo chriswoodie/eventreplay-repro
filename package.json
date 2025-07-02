@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:repro-app": "ng build && node dist/repro-app/server/server.mjs"
+    "serve:ssr:repro-app": "ng build sdk && ng build && node dist/repro-app/server/server.mjs"
   },
   "private": true,
   "dependencies": {
