@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+
+@if (hasFooter) {
+
+  @defer (hydrate on interaction) {
+    <app-footer />
+  }
+}

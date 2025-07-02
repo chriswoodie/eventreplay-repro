@@ -1,0 +1,9 @@
+<lazy-component>Works on first click</lazy-component>
+
+@for (menu of menus(); track menu.title) {
+    
+    @for (item of menu.items; track item.label) {
+        <lazy-component style="display: block;">{{ item.label }}</lazy-component>
+    }
+
+}
